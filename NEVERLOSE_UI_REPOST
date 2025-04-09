@@ -922,12 +922,12 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				InputBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 				InputBox.BackgroundTransparency=0
 				InputBox.ClearTextOnFocus = false
-				InputBox.TextColor3 = Color3.FromRGB(255, 255, 255)
+				InputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 				InputBox.TextTransparency=0
 				InputBox.Text=TTT
 				InputBox.ZIndex=5000
 				InputBox.PlaceholderText = PlaceHolderText
-				InputBox.PlaceholderColor3 = Color3.FromRGB(178, 178, 178)
+				InputBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 
 				InputBox.FocusLost:Connect(function()
 				    callback(InputBox.Text)
