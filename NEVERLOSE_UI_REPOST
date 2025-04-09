@@ -917,6 +917,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				UIAspectRatioConstraint.AspectRatio = 7.000
 				UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
 
+				InputBox.Parent=InputBoxFrame
 				InputBox.Size=UDim2.new(1,0,1,0)
 				InputBox.BackgroundColor3 = Color3.FromRGB(34, 34, 34)
 				InputBox.BackgroundTransparency=0
@@ -924,7 +925,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				InputBox.TextColor3 = Color3.FromRGB(255, 255, 255)
 				InputBox.TextTransparency=0
 				InputBox.Text=TTT
-				InputBox.Parent=InputBoxFrame
 				InputBox.ZIndex=5000
 				InputBox.PlaceholderText = PlaceHolderText
 				InputBox.PlaceholderColor3 = Color3.FromRGB(178, 178, 178)
