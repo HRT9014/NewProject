@@ -919,7 +919,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 				InputBox.Parent=InputBoxFrame
 				InputBox.Size=UDim2.new(1,0,1,0)
-				InputBox.BackgroundColor3 = Color3.FromRGB(34, 34, 34)
+				InputBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 				InputBox.BackgroundTransparency=0
 				InputBox.ClearTextOnFocus = false
 				InputBox.TextColor3 = Color3.FromRGB(255, 255, 255)
