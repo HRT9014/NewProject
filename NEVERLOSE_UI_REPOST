@@ -928,6 +928,21 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				InputBox.PlaceholderText = PlaceHolderText
 				InputBox.PlaceholderColor3 = Color3.FromRGB(178, 178, 178)
 
+				local func={}
+
+				function func:Value(s)
+					InputBox.Text = tostring(s)
+					Inline.Size=UDim2.fromScale((s/Max),1)
+
+					callback(s)
+				end
+
+				function func:Text(t)
+					LabelText.Text=tostring(t)
+				end
+				
+				update_section_size()
+				return func
 			end
 			function sectionfunc:AddButton(ButtonName,callback)
 				callback=callback or function()
