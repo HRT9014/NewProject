@@ -935,7 +935,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 					InputBox.Text = tostring(t)
 				end
 				
-				return func
+				return callback
 			end
 			function sectionfunc:AddButton(ButtonName,callback)
 				callback=callback or function()
