@@ -929,13 +929,10 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				InputBox.PlaceholderText = PlaceHolderText
 				InputBox.PlaceholderColor3 = Color3.FromRGB(178, 178, 178)
 
-				local func={}
 
-				function func:Text(t)
-					InputBox.Text = tostring(t)
-				end
-				
-				return callback
+				InputBox.FocusLost:Connect(function()
+				    callback(InputBox.Text)
+				end)
 			end
 			function sectionfunc:AddButton(ButtonName,callback)
 				callback=callback or function()
